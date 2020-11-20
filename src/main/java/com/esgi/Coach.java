@@ -1,9 +1,12 @@
 package com.esgi;
 
+import java.util.ArrayList;
+
 public class Coach {
     private String nom;
     private String prenom;
     private int codepostal;
+    private ArrayList<Cours> cours;
 
     public Coach(String nom, String prenom, int codepostal) {
         this.nom = nom;
@@ -33,6 +36,10 @@ public class Coach {
 
     public void setCodepostal(int codepostal) {
         this.codepostal = codepostal;
+    }
+
+    public void addCours(Cours c){
+            this.cours.add(c);
     }
 
     @Override

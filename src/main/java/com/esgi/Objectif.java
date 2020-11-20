@@ -1,14 +1,16 @@
 package com.esgi;
 
+import java.util.ArrayList;
+
 public class Objectif {
     private int id;
     private String label;
-    private Objectif objectifs;
+    private ArrayList<Objectif> objectifs;
 
     public Objectif(int id, String label, Objectif objectifs) {
         this.id = id;
         this.label = label;
-        this.objectifs = objectifs;
+        this.objectifs = new ArrayList<Objectif>();
     }
 
     public int getId() {
@@ -27,12 +29,16 @@ public class Objectif {
         this.label = label;
     }
 
-    public Objectif getObjectifs() {
+    public ArrayList<Objectif> getObjectifs() {
         return objectifs;
     }
 
-    public void setObjectifs(Objectif objectifs) {
+    public void setObjectifs(ArrayList<Objectif> objectifs) {
         this.objectifs = objectifs;
+    }
+
+    public void addObjectif(Objectif o){
+        this.objectifs.add(o);
     }
 
     @Override

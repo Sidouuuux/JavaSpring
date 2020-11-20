@@ -1,10 +1,12 @@
 package com.esgi;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Cours implements Serializable{
     private int id;
     private String label;
+    private ArrayList<Cours> objectifs;
 
     public Cours() {
         this.label = new String();

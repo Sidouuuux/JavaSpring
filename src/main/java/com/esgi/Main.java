@@ -16,7 +16,13 @@ public class Main {
 
         Cours cours = (Cours) fac.getBean("Cours");
         Coach patrick = (Coach) fac.getBean("Patrick");
-        Objectif objectif1 =
+        Objectif objectif1 = (Objectif) fac.getBean("objectif1");
+        Objectif objectif2 = (Objectif) fac.getBean("objectif1.1");
+        Objectif objectif13 = (Objectif) fac.getBean("objectif12");
+
+        patrick.addCours(cours);
+        objectif1.addObjectif(objectif2);
+
         cours.afficher();
 
 
