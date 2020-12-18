@@ -7,6 +7,11 @@ public class Objectif {
     private String label;
     private ArrayList<Objectif> objectifs;
 
+    public Objectif(int id, String label) {
+        this.id = id;
+        this.label = label;
+        this.objectifs = new ArrayList<Objectif>();
+    }
     public Objectif(int id, String label, Objectif objectifs) {
         this.id = id;
         this.label = label;

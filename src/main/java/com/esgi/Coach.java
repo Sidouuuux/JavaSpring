@@ -12,6 +12,7 @@ public class Coach {
         this.nom = nom;
         this.prenom = prenom;
         this.codepostal = codepostal;
+        this.cours = new ArrayList<Cours>();
     }
 
     public String getNom() {
